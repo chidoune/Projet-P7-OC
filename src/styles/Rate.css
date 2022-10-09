@@ -1,0 +1,13 @@
+.rate {
+  position: absolute;
+	left: 1160px;
+  top: 690px;
+}
+
+.rateimg {
+	/*left: 3px;
+	top: 3px;*/
+	height: 30px;
+	width: 30px;
+  background: #FF6060;
+}

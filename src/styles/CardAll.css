@@ -1,0 +1,14 @@
+.cardAll{
+	width: 1240px;
+	height: auto;
+  position: absolute;
+	left: 100px;
+	top: 437px;
+	background: #F7F7F7;
+	border-radius: 25px;
+
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+	padding-top: 55px;
+}

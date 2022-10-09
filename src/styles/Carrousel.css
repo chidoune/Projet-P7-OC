@@ -1,0 +1,35 @@
+.carrousel {
+    position: absolute;
+    left: 100px;
+    top: 128px;
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+}
+
+.carrouselimg {
+    border-radius: 25px;
+}
+
+.carrouselvector1 {
+    position: absolute;
+    left: 94%;
+    top: 38%;
+}
+
+.carrouselvector2 {
+  position: absolute;
+	left: 2%;
+	top: 38%;
+
+}
+
+.carrouselpage {
+	position: absolute;
+	left: 49%;
+	top: 86%;
+	font-family: 'Montserrat';
+	font-size: 18px;
+	/* or 26px */
+	color: #FFFF;
+}
