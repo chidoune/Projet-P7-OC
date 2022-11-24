@@ -1,63 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 .error {
-position: relative;
-width: 1440px;
-height: 1024px;
+font-family: 'Montserrat';
+text-align: center;
+height: auto;
 background: #FFFFFF;
+display: flex;
+flex-direction: column;
+justify-content: center;
+color: #FF6060;
 }
 
 .error404 {
-position: relative;
-height: 263px;
-width: 597px;
-left: 20%;
-bottom: -16%;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 288px;
-line-height: 142.6%;
-/* or 411px */
 display: flex;
-align-items: center;
-text-align: center;
-color: #FF6060;
+justify-content: center;
+font-size: 235px;
+margin: 0 auto;
 }
 
 .error404_oups {
-height: 51px;
-width: 872px;
-position: absolute;
-left: 13%;
-right: 18.96%;
-top: 46%;
-bottom: 35.84%;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 36px;
-line-height: 142.6%;
-/* or 51px */
 display: flex;
-align-items: flex-end;
-color: #FF6060;
+justify-content: center;
+font-size: 30px;
+margin: auto 20px;
 }
 
 .error404_retour {
-height: 26px;
-width: 100%;
-position: absolute;
-left: 32%;
-right: 40.14%;
-top: 81.93%;
-bottom: 15.53%;
 display: flex;
-align-items: flex-end;
+justify-content: center;
 text-decoration-line: underline;
-color: #FF6060;
 font-size: 18px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
+color: #FF6060;
+
+margin: 77px 20px auto 20px;
+}
+
+@media screen and (min-width: 690px) and (max-width: 970px) {
+    .error404 {
+        font-size: 234px;
+    }
+
+    .error404_oups {
+    font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 689px) {
+    .error404 {
+        font-size: 180px;
+    }
+
+    .error404_oups {
+    font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .error404 {
+        font-size: 110px;
+    }
+
+    .error404_oups {
+    font-size: 20px;
+    }
 }

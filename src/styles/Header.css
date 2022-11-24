@@ -1,63 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 .header {
-position: absolute;
-width: 1240px;
-height: 68px;
-left: 100px;
-top: 40px;
+width: 94%;
+height: 178px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 0 3%;
 }
 
 .nav {
     height: 34px;
-    width: 309px;
-    left: 931px;
-    top: 17px;
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.about {
-    position: absolute;
-    left: 90.65%;
-    right: 0%;
-    top: 25%;
-    bottom: 25%;
+.homeabout {
     font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
     font-size: 24px;
-    line-height: 142.6%;
-    /* or 34px */
     display: flex;
     align-items: flex-end;
     text-align: right;
     color: #FF6060;
+    text-decoration: none;
 }
 
-.home {
-    position: absolute;
-    left: 75.08%;
-    right: 13.95%;
-    top: 25%;
-    bottom: 25%;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 142.6%;
-    /* or 34px */
-    display: flex;
-    align-items: flex-end;
-    text-align: right;
-    text-decoration-line: underline;
-    color: #FF6060;
+@media screen and (max-width:768px) {
+.nav {
+    width: 230px;
+    }
 }
 
-.logo {
-height: 68px;
-width: 210px;
-position: absolute;
-left: 0%;
-right: 83%;
-top: 0%;
-bottom: 0%;
-}
+
+@media screen and (max-width:549px) {
+    .header {
+        flex-direction: column;
+        height: 135px;
+        margin: 5% 3% 50px 3%;
+        }
+    }

@@ -1,16 +1,45 @@
+import {logementList} from '../../datas/logements'
+import {useParams} from 'react-router-dom'
+import {useState} from 'react'
 import vectorBigRigth from '../../assets/vectorBigRigth.png'
 import vectorBigLeft from '../../assets/vectorBigLeft.png'
-import background from '../../assets/background.png'
 import '../../styles/Carrousel.css'
-//import {test} from '../../datas/test'
 
-function Carrousel() {
+
+function Carrousel({pictures}) {
+  const { id } = useParams()
+  const logement = logementList.filter((x) => x.id === id)[0]
+  console.log(logement.pictures)
+
+  const [current, setCurrent] = useState(0)
+  const length = logement.pictures.length
+  console.log(length)
+
+  const prevPicture = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1)}
+
+  const nextPicture = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1)}
+
+    console.log(current)
+
   return (
     <div className="carrousel">
-			<img src={background} alt="aperçu logement" className="carrouselimg "/>
-			<img src={vectorBigRigth} alt="fleche suivant" className="carrouselvector1"/>
-			<img src={vectorBigLeft} alt="fleche retour" className="carrouselvector2"/>
-			<p className="carrouselpage">1/4</p>
+			{logement.pictures.map((picture, index) => { return (
+        <div>
+          {index === current && (<img src={picture} alt="aperçu logement" className="carrouselimg "/>)}
+        </div>
+      )
+       })}
+       {length === 1 ? (
+        <div></div>
+       ) : (
+        <div>
+          <img onClick={nextPicture} src={vectorBigRigth} alt="fleche suivant" className="carrouselvector1"/>
+			    <img onClick={prevPicture} src={vectorBigLeft} alt="fleche retour" className="carrouselvector2"/>
+        </div>
+       )}
+			<p className="carrouselpage">{current+1}/{length}</p>
     </div>
   )
 };

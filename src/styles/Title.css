@@ -1,45 +1,35 @@
 .title {
-	position: absolute;
-	left: 100px;
-	top: 573px;
-  width: 635px;
-  height: 77px;
+  height: auto;
+  margin-bottom: 40px;
+
 }
 
 .titleh1 {
-	/*position: absolute;
-	left: 6.94%;
-	right: 48.96%;
-	top: 55.96%;
-	bottom: 39.06%;*/
 	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 500;
 	font-size: 36px;
-	line-height: 142.6%;
-	/* or 51px */
 	display: flex;
 	align-items: flex-end;
 	color: #FF6060;
-
 	margin-bottom: 10px;
 }
 
 .titletxt {
-	/*position: absolute;
-	left: 6.94%;
-	right: 80.83%;
-	top: 60.94%;
-	bottom: 36.52%;*/
 	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 500;
 	font-size: 18px;
-	line-height: 142.6%;
-	/* identical to box height, or 26px */
 	display: flex;
 	align-items: flex-end;
 	color: #FF6060;
-
 	margin-top: 0;
 }
+
+@media screen and (min-width: 320px) and (max-width: 520px) {
+.titleh1 {
+	font-size: 29px;
+   }
+}
+
+@media screen and (max-width: 319px) {
+	.titleh1 {
+		font-size: 22px;
+	   }
+	}

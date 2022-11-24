@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import reportWebVitals from './reportWebVitals';
-//import './index.css';
+import './styles/index.css';
 //import App from './App';
 import Home from './pages/home/index';
 import Logement from './pages/logement/index';
@@ -13,7 +13,6 @@ import Header from './components/Header/index';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
         <Router>
           <Header />
           <Switch>
@@ -26,12 +25,11 @@ root.render(
             <Route path="/about">
                 <About />
             </Route>
-            <Route>
+            <Route path="*">
                 <Error />
             </Route>
             </Switch>
-        </Router>
-  </React.StrictMode>            
+        </Router>         
 );
 
 

@@ -1,9 +1,10 @@
 .cardAll{
-	width: 1240px;
+	/*width: 1240px;*/
+	width: 94%;
 	height: auto;
-  position: absolute;
+  /*position: absolute;
 	left: 100px;
-	top: 437px;
+	top: 437px;*/
 	background: #F7F7F7;
 	border-radius: 25px;
 
@@ -11,4 +12,5 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 	padding-top: 55px;
+	margin: 50px 3%;
 }

@@ -1,35 +1,75 @@
 .carrousel {
-    position: absolute;
-    left: 100px;
-    top: 128px;
-    width: 1240px;
+    position: relative;
+    width: 100%;
     height: 415px;
     border-radius: 25px;
+    margin: 0 3%;
 }
 
 .carrouselimg {
     border-radius: 25px;
+    height: 415px;
+    width: 95%;
+    object-fit: cover;
 }
 
 .carrouselvector1 {
     position: absolute;
-    left: 94%;
-    top: 38%;
+    right : 6%;
+    top: 40%;
 }
 
 .carrouselvector2 {
   position: absolute;
-	left: 2%;
-	top: 38%;
-
+	left: 1%;
+	top: 40%;
 }
 
 .carrouselpage {
-	position: absolute;
-	left: 49%;
-	top: 86%;
 	font-family: 'Montserrat';
 	font-size: 18px;
-	/* or 26px */
 	color: #FFFF;
+    position: absolute;
+    left: 47%;
+    top: 86%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 520px) {
+    .carrouselvector1 {
+    height: 55px;
+    top: 43%;
+    right: 9%;
+    }
+
+    .carrouselvector2 {
+        height: 55px;
+        top: 43%;
+        left: 4%;
+        }
+
+    .carrouselpage {
+        left: 45%;
+    }
+}
+
+@media screen and (max-width: 319px) {
+    .titleh1 {
+     font-size: 29px;
+}
+
+    .carrouselvector1 {
+    height: 55px;
+    top: 43%;
+    right: 9%;
+    }
+
+    .carrouselvector2 {
+        height: 55px;
+        top: 43%;
+        left: 4%;
+        }
+
+    .carrouselpage {
+        left: 45%;
+    }
 }

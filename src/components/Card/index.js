@@ -1,12 +1,9 @@
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
-import { useParams } from 'react-router-dom'
 import '../../styles/Card.css'
 
-
-function Card({ title, cover }) {
-  const { id }  = useParams()
-  return (
+function Card({ title, cover, id }) {
+    return (
     <Link to={`/logement/${id}`} className="card">
         <img src={cover} alt="aperçu logement" className="cardcover"/>
 				<div className="cardtitle">{title}</div>

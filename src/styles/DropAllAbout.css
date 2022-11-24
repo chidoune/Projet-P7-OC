@@ -1,5 +1,7 @@
 .dropDownAll {
-	position: absolute;
-	top: 435px;
-	left: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 52px;
 }

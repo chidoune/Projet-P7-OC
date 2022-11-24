@@ -1,8 +1,8 @@
+import Error404 from '../components/Error/index.js'
+
 function Error() {
     return (
-      <div>
-
-      </div>
+    <Error404 />
     );
   }
   

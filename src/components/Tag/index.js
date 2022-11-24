@@ -1,9 +1,9 @@
 import '../../styles/Tag.css'
  
-function Tag({tags}) {
+function Tag({tag}) {
   return (
     <div className="tag">
-      <h2 className="tagh2">{tags} Cozy</h2>
+      <h2 className="tagh2">{tag}</h2>
     </div>
   )
 };

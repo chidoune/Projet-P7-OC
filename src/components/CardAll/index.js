@@ -11,6 +11,7 @@ function CardAll() {
             	key={x.id}
             	title={x.title}
             	cover={x.cover}
+				id={x.id}
           />
      	))}
     </div>
