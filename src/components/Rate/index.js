@@ -10,15 +10,13 @@ function Rate() {
   const { id } = useParams()
   const logement = logementList.filter((x) => x.id === id)[0]
   const stars = logement.rating
-  console.log('nombre etoiles:',stars)
 
   const arrayStars = Array(5).fill()
-  console.log(arrayStars)
 
   return (
     <div>
       {arrayStars.map((_, index) => stars >= index + 1 ? 
-        (<img className= "rateimg" src = {starfull} alt = "etoile pleine"/>) : (<img className= "rateimg" src = {starEmpty} alt = "etoile vide"/>)
+        (<img key={index} className= "rateimg" src = {starfull} alt = "etoile pleine"/>) : (<img key={index} className= "rateimg" src = {starEmpty} alt = "etoile vide"/>)
         )}
     </div>
   ) 

@@ -9,11 +9,9 @@ import '../../styles/Carrousel.css'
 function Carrousel({pictures}) {
   const { id } = useParams()
   const logement = logementList.filter((x) => x.id === id)[0]
-  console.log(logement.pictures)
 
   const [current, setCurrent] = useState(0)
   const length = logement.pictures.length
-  console.log(length)
 
   const prevPicture = () => {
     setCurrent(current === 0 ? length - 1 : current - 1)}
@@ -21,13 +19,11 @@ function Carrousel({pictures}) {
   const nextPicture = () => {
     setCurrent(current === length - 1 ? 0 : current + 1)}
 
-    console.log(current)
-
   return (
     <div className="carrousel">
 			{logement.pictures.map((picture, index) => { return (
-        <div>
-          {index === current && (<img src={picture} alt="aperçu logement" className="carrouselimg "/>)}
+        <div key={index}>
+          {index === current && (<img key={index} src={picture} alt="aperçu logement" className="carrouselimg "/>)}
         </div>
       )
        })}

@@ -34,7 +34,26 @@
     top: 86%;
 }
 
+@media screen and (min-width: 521px) and (max-width: 630px) {
+    .carrousel {
+        height: 325px;
+    }
+
+    .carrouselimg{
+        height: 325px;
+    }
+}
+
+
 @media screen and (min-width: 320px) and (max-width: 520px) {
+    .carrousel {
+        height: 250px;
+    }
+
+    .carrouselimg{
+        height: 250px;
+    }
+
     .carrouselvector1 {
     height: 55px;
     top: 43%;
@@ -49,6 +68,7 @@
 
     .carrouselpage {
         left: 45%;
+        top: 82%;
     }
 }
 
@@ -57,19 +77,30 @@
      font-size: 29px;
 }
 
+.carrousel {
+    height: 175px;
+}
+
+.carrouselimg{
+    height: 175px;
+}
+
     .carrouselvector1 {
-    height: 55px;
+    height: 35px;
     top: 43%;
-    right: 9%;
+    right: 8%;
     }
 
     .carrouselvector2 {
-        height: 55px;
+        height: 35px;
         top: 43%;
-        left: 4%;
+        left: 3%;
         }
 
     .carrouselpage {
-        left: 45%;
+        left: 42%;
+        top:76%;
+        font-size: 15px;
+       
     }
 }

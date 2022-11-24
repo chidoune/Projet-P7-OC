@@ -23,6 +23,13 @@ margin: 0 3%;
     align-items: flex-end;
     text-align: right;
     color: #FF6060;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.inactive {
     text-decoration: none;
 }
 
