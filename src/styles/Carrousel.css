@@ -54,53 +54,52 @@
         height: 250px;
     }
 
-    .carrouselvector1 {
+.carrouselvector1 {
     height: 55px;
     top: 43%;
     right: 9%;
     }
 
-    .carrouselvector2 {
-        height: 55px;
-        top: 43%;
-        left: 4%;
-        }
+.carrouselvector2 {
+    height: 55px;
+    top: 43%;
+    left: 4%;
+    }
 
-    .carrouselpage {
-        left: 45%;
-        top: 82%;
+.carrouselpage {
+    left: 45%;
+    top: 82%;
     }
 }
 
 @media screen and (max-width: 319px) {
     .titleh1 {
      font-size: 29px;
-}
+    }
 
 .carrousel {
     height: 175px;
-}
+    }
 
 .carrouselimg{
     height: 175px;
-}
+    }
 
-    .carrouselvector1 {
+.carrouselvector1 {
     height: 35px;
     top: 43%;
     right: 8%;
     }
 
-    .carrouselvector2 {
-        height: 35px;
-        top: 43%;
-        left: 3%;
-        }
+.carrouselvector2 {
+    height: 35px;
+    top: 43%;
+    left: 3%;
+    }
 
-    .carrouselpage {
-        left: 42%;
-        top:76%;
-        font-size: 15px;
-       
+.carrouselpage {
+    left: 42%;
+    top:76%;
+    font-size: 15px;   
     }
 }

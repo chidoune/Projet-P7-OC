@@ -1,4 +1,3 @@
-//import picture from '../../assets/picture.png'
 import '../../styles/Host.css'
 
 function Host({name, picture}) {

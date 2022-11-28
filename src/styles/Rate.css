@@ -4,8 +4,8 @@
 }
 
 @media screen and (max-width: 324px) {
-    .rateimg {
-		height: 23px;
-		width: 23px;
+.rateimg {
+	height: 23px;
+	width: 23px;
     }
 }

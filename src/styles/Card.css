@@ -23,8 +23,9 @@
     align-items: flex-end;
     color: #FFFFFF;
     position: relative;
-    top: -20%;
-    padding-left: 5%;
+    bottom: 20%;
+    padding: 0 3%;
+
 }
 
 @media screen and (min-width:765px) and (max-width: 1148px) {
@@ -51,6 +52,10 @@
     .card {
         height: 240px;
 
+    }
+
+    .card-background {
+        height: 240px;
     }
 
     .cardcover {

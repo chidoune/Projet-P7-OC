@@ -1,6 +1,6 @@
 .title {
-  height: auto;
-  margin-bottom: 40px;
+  	height: auto;
+  	margin-bottom: 40px;
 
 }
 
@@ -29,7 +29,7 @@
 }
 
 @media screen and (max-width: 319px) {
-	.titleh1 {
-		font-size: 22px;
-	   }
+.titleh1 {
+	font-size: 22px;
 	}
+}

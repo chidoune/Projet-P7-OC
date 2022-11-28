@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 .header {
-width: 94%;
-height: 178px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin: 0 3%;
+    width: 94%;
+    height: 178px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3%;
 }
 
 .nav {
@@ -41,9 +41,9 @@ margin: 0 3%;
 
 
 @media screen and (max-width:549px) {
-    .header {
-        flex-direction: column;
-        height: 135px;
-        margin: 5% 3% 50px 3%;
-        }
+.header {
+    flex-direction: column;
+    height: 135px;
+    margin: 5% 3% 50px 3%;
     }
+}

@@ -6,14 +6,15 @@ import DropAbout from '../../components/DropAbout/index'
 import Host from '../../components/Host/index'
 import Rate from '../../components/Rate/index'
 import Footer from '../../components/Footer/index'
+import Error404 from '../../components/Error/index'
 import {logementList} from '../../datas/logements'
 import '../../styles/Container-info.css'
-import Error404 from '../../components/Error/index'
+
 
 
 function Logement() {
 const { id } = useParams()
-  const logement = logementList.filter((x) => x.id === id)?.[0]
+const logement = logementList.filter((x) => x.id === id)?.[0]
 
 if (!logement) {
   return <Error404 />

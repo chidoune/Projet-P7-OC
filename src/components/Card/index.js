@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import '../../styles/Card.css'
 
-function Card({ title, cover, id }) {
+function Card ({ title, cover, id }) {
     return (
     <Link to={`/logement/${id}`} className="card">
         <img src={cover} alt="aperçu logement" className="cardcover"/>

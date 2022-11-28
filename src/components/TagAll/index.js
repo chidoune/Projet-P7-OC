@@ -1,4 +1,3 @@
-//import {logementList} from '../../datas/logements'
 import Tag from '../Tag/index'
 import '../../styles/TagAll.css'
 

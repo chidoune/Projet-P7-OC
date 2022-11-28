@@ -1,19 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Redirect
-} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import reportWebVitals from './reportWebVitals'
-import './styles/index.css'
-//import App from './App';
 import Home from './pages/home/index'
 import Logement from './pages/logement/index'
 import About from './pages/about/index'
 import Error from './components/Error/index'
 import Header from './components/Header/index'
+import './styles/index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(

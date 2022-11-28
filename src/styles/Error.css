@@ -31,36 +31,35 @@ justify-content: center;
 text-decoration-line: underline;
 font-size: 18px;
 color: #FF6060;
-
 margin: 77px 20px auto 20px;
 }
 
 @media screen and (min-width: 690px) and (max-width: 970px) {
-    .error404 {
-        font-size: 234px;
+.error404 {
+    font-size: 234px;
     }
 
-    .error404_oups {
+.error404_oups {
     font-size: 32px;
     }
 }
 
 @media screen and (min-width: 500px) and (max-width: 689px) {
-    .error404 {
-        font-size: 180px;
+.error404 {
+    font-size: 180px;
     }
 
-    .error404_oups {
+.error404_oups {
     font-size: 26px;
     }
 }
 
 @media screen and (max-width: 499px) {
-    .error404 {
+.error404 {
         font-size: 110px;
     }
 
-    .error404_oups {
+.error404_oups {
     font-size: 20px;
     }
 }

@@ -10,10 +10,10 @@
 	border-radius: 5px;
 	height: 47px;
 	width: 93%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
 }
 
 .dropdowntitle {
